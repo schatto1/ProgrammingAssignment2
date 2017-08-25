@@ -29,8 +29,10 @@ makeCacheMatrix <- function(x = matrix())
     {
         ma
     }
+    list(set = set, get = get, 
+         setmatrix = setmatrix,
+         getmatrix = getmatrix)
 }
-
 
 ## cacheSolve returns the cached inverse matrix is this was previously calculated
 ## and already stored by the makeCacheMatrix function. Otherwise, it calculates
@@ -53,3 +55,5 @@ cacheSolve <- function(x, ...)
         ma
     }
 }
+
+
